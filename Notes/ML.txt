@@ -1,0 +1,68 @@
+Type of ML
+
+ML
+├── Supervised
+│      ├── Regression
+│      ├── Anomaly detection
+│      └── Classification
+│			     ├── Binary classification
+│			     ├── Multiclass classification
+│			     └── Multilabel classification
+├── Unsupervised
+│      ├── Clustering
+│      └── Dimensional Reduction
+├── Semi-Supervised
+├── Self-Supervised
+├── Reinforcement
+└── Deep Learning
+       ├── CNN
+       ├── RNN
+       └── Transformers
+
+==================================Machine Learning Algorithms==================================
+
+Machine Learning (ML)
+├── Supervised Learning
+│      ├── Regression
+│      │      ├── Linear Regression
+│      │      ├── Polynomial Regression
+│      │      ├── Random Forest Regressor
+│      │      └── Gradient Boosting Regressor
+│      ├── Classification
+│      │      ├── Logistic Regression
+│      │      ├── Decision Trees
+│      │      ├── SVM (Support Vector Machine)
+│      │      └── Naive Bayes
+│      └── Anomaly Detection
+│             ├── One-Class SVM
+│             ├── Isolation Forest
+│             └── Local Outlier Factor (LOF)
+│
+├── Unsupervised Learning
+│      ├── Clustering
+│      │      ├── K-Means
+│      │      ├── DBSCAN
+│      │      └── Hierarchical Clustering
+│      └── Dimensional Reduction
+│             ├── PCA (Principal Component Analysis)
+│             ├── t-SNE
+│             └── UMAP
+│
+├── Semi-Supervised Learning
+│      ├── Label Propagation
+│      ├── Label Spreading
+│      └── Self-Training Classifier
+│
+├── Self-Supervised Learning
+│      ├── Contrastive Learning (SimCLR, MoCo)
+│      └── Masked Language Modeling (BERT)
+│
+├── Reinforcement Learning
+│      ├── Q-Learning
+│      ├── SARSA
+│      └── Deep Q Network (DQN)
+│
+└── Deep Learning
+       ├── CNN (Convolutional Neural Networks)
+       ├── RNN / LSTM / GRU
+       └── Transformers (BERT, GPT)

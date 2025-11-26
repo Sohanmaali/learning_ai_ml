@@ -1,0 +1,358 @@
+NLU : Nature Language understand
+Lang chain language model
+different between agent and chatbot
+LLM Based model -> GPT-3 Llama-3 
+Chat model -> GPT-4, GPT-3.5, Llama-2-Chat
+why use LLMs and chat Models
+we should use llms model or chat model
+
+GPT models
+
+Embedding models
+GPT Embedding
+how to generate Embedding query
+how to generate Embedding query for multiple question?
+Fine-tuning for a specific task
+
+------------------------------
+learn hugging face
+learn sklearn
+------------------------------
+
+
+opensource model
+
+console.anthropic.com
+
+LangChain Mastery
+│
+├── 1. Models
+│       ├── LLMs
+│       │       ├── GPT / Claude / Gemini
+│       │       └── Local Models (Llama, Mistral, etc.)
+│       ├── Embedding Models
+│       │       ├── OpenAI Embeddings
+│       │       ├── HuggingFace Embeddings
+│       │       └── Instructor / BGE / Cohere
+│       └── Chat Models
+│               ├── ChatOpenAI
+│               ├── ChatAnthropic
+│               └── ChatGoogle
+│
+├── 2. Prompts
+│       ├── Prompt Templates
+│       │       ├── StringPromptTemplate
+│       │       ├── ChatPromptTemplate
+│       │       ├── Few-shot Prompts
+│       │       └── System / Human / AI Messages
+│       └── Output Parsers
+│               ├── JSON Output Parser
+│               ├── Pydantic Output Parser
+│               ├── Structured Output Parser
+│               └── Regex Parsers
+│
+├── 3. Data Ingestion
+│       ├── Document Loaders
+│       │       ├── PDFLoaders
+│       │       ├── HTML / Web Page Loaders
+│       │       ├── Word / Excel / PowerPoint Loaders
+│       │       ├── Notion / Confluence / Slack
+│       │       └── Database Loaders
+│       └── Text Splitters
+│               ├── RecursiveCharacterTextSplitter
+│               ├── TokenTextSplitter
+│               └── Semantic Splitters
+│
+├── 4. Vector Stores
+│       ├── Local
+│       │       ├── FAISS
+│       │       └── Chroma
+│       └── Cloud
+│               ├── Pinecone
+│               ├── Weaviate
+│               ├── Milvus
+│               └── Elasticsearch
+│
+├── 5. Retrievers
+│       ├── Similarity Search Retriever
+│       ├── MMR Retriever
+│       ├── Self-Query Retriever
+│       ├── Multi-Query Retriever
+│       ├── Contextual Compression Retriever
+│       ├── Parent Document Retriever
+│       └── Ensemble Retriever
+│
+├── 6. Chains
+│       ├── Basic Chains
+│       │       ├── LLMChain
+│       │       ├── SequentialChain
+│       │       └── RouterChain
+│       ├── RAG Chains
+│       │       ├── RetrievalQA
+│       │       ├── ConversationalRetrievalChain
+│       │       ├── Map-Reduce Chain
+│       │       └── Refine Chain
+│       └── Advanced Chains
+│               ├── Hypothetical Document Embeddings (HyDE)
+│               └── Multi-step Pipelines
+│
+├── 7. Memory
+│       ├── ConversationBufferMemory
+│       ├── ConversationSummaryMemory
+│       ├── ConversationBufferWindowMemory
+│       ├── Entity Memory
+│       └── VectorStoreRetrieverMemory
+│
+├── 8. Tools & Agents
+│       ├── Tools
+│       │       ├── Search Tools
+│       │       ├── Calculator
+│       │       ├── API Tools
+│       │       └── Custom Tools
+│       └── Agents
+│               ├── ReAct Agents
+│               ├── OpenAI Function-Calling Agents
+│               ├── Tool Calling Agents
+│               ├── Conversational Agents
+│               └── Multi-Agent Systems
+│
+├── 9. LangGraph (Advanced)
+│       ├── Nodes & Edges
+│       ├── State Management
+│       ├── Cycles / Loops
+│       ├── Conditional Edges
+│       └── Multi-agent Graphs
+│
+├── 10. Callbacks & Observability
+│       ├── Streaming Tokens
+│       ├── Logging
+│       ├── Tracing
+│       └── Token Usage Callbacks
+│
+├── 11. Evaluation (LangSmith)
+│       ├── RAG Evaluation
+│       ├── Retrieval Scoring
+│       ├── Hallucination Detection
+│       ├── Correctness Tests
+│       └── Toxicity / Safety Checks
+│
+└── 12. Production & Optimization
+        ├── Caching (Redis / LangSmith)
+        ├── Parallelization
+        ├── Error Handling & Retries
+        ├── Rate Limiting
+        ├── Prompt Optimization
+        └── Deployment (Docker, Serverless, Cloud)
+
+============================================LangChain Ecosystem Diagram (v0.3.x)============================================
+
+LangChain
+│
+├── langchain-core
+│       ├── Base LLM / ChatModel Interfaces
+│       ├── Prompt Templates
+│       ├── Output Parsers
+│       ├── Messages (System / Human / AI)
+│       ├── Runnable / Chains Framework
+│       └── Tools & Tool Calling
+│
+├── langchain-text-splitters
+│       ├── RecursiveCharacterTextSplitter
+│       ├── TokenTextSplitter
+│       └── Semantic / Markdown Splitters
+│
+├── langchain-community
+│       ├── Document Loaders
+│       ├── Vector Stores (FAISS, Chroma, Milvus…)
+│       ├── Retrievers
+│       ├── Tools (Search, Calculator, APIs)
+│       ├── Callbacks
+│       └── Integrations (100+)
+│
+├── langchain-openai
+│       ├── OpenAI Chat Models (GPT-4o, GPT-4.1…)
+│       ├── OpenAI Embeddings
+│       └── OpenAI Tool Calling
+│
+├── langchain-anthropic
+│       ├── Claude Models (Claude 3.x)
+│       └── Tool Calling & Message Formatting
+│
+├── langchain-google
+│       ├── Gemini Models
+│       ├── Google Embeddings
+│       └── VertexAI Tools
+│
+├── langchain-huggingface
+│       ├── HFTextGeneration
+│       └── HFEmbeddings / Inference API
+│
+├── langchain-pinecone
+│       └── Pinecone Vector Store + Index Management
+│
+├── langchain-weaviate
+│       └── Weaviate Vector Store + Filters
+│
+├── langchain-milvus
+│       └── Milvus / Zilliz Vector Store
+│
+├── Retrieval (RAG Ecosystem)
+│       ├── VectorStoreRetriever
+│       ├── SelfQueryRetriever
+│       ├── MultiQueryRetriever
+│       ├── ContextualCompressionRetriever
+│       ├── ParentDocumentRetriever
+│       └── Ensemble / Hybrid Retrieval
+│
+├── RAG Pipelines (langchain.chains)
+│       ├── RetrievalQA
+│       ├── ConversationalRetrievalChain
+│       ├── Map-Reduce Document QA
+│       ├── Refine Chain
+│       └── Hypothetical Document Embeddings (HyDE)
+│
+├── Memory
+│       ├── ConversationBufferMemory
+│       ├── BufferWindowMemory
+│       ├── ConversationSummaryMemory
+│       └── VectorStore Memory
+│
+├── Agents (langchain-agents)
+│       ├── ReAct Agents
+│       ├── Tool Calling Agents
+│       ├── OpenAI Functions Agent
+│       ├── JSON Agent
+│       └── Multi-agent Workflows
+│
+├── LangGraph (Stateful Applications)
+│       ├── Nodes / Edges
+│       ├── State Stores
+│       ├── Loops / Cycles
+│       ├── Conditional Routing
+│       └── Multi-agent Graphs
+│
+├── Observability
+│       ├── Callbacks (streaming, debugging)
+│       └── LangSmith (Tracing, Metrics, Eval)
+│
+└── Production & Deployment
+        ├── Caching (Redis, LangSmith)
+        ├── Rate Limiting
+        ├── Parallel Execution
+        ├── Prompt Optimization
+        ├── Docker / Serverless Deployment
+        └── Cloud Integrations (AWS / GCP / Azure)
+		
+==========================================================================================================================
+
+-----------------------------
+Models
+-----------------------------
+types of models in LangChain:
+
+************
+LLMs:
+************
+	-> Pretraining
+	-> Fine-tuning
+	-> RLHF (Reinforcement Learning from Human Feedback)
+	
+Pretraining - =>
+
+| Type of Pretraining      | Goal                           | Used In                 |
+| ------------------------ | ------------------------------ | ----------------------- |
+| Self-supervised          | Learn from unlabeled data      | GPT, BERT               |
+| Supervised               | Learn labeled patterns         | Image classification    |
+| Masked Language Modeling | Understand deep context        | BERT                    |
+| Next Token Prediction    | Generate continuous text       | GPT                     |
+| Next Sentence Prediction | Learn sentence relationships   | BERT                    |
+| Contrastive Learning     | Match meaning across formats   | CLIP, multimodal models |
+| Multimodal Pretraining   | Understand multiple data types | Vision+Language models  |
+
+Fine-tuning - =>
+
+| Fine-tuning Type                 | Purpose                        | Cost      |
+| -------------------------------- | ------------------------------ | --------- |
+| **Full Fine-tuning**             | Retrain entire model           | Expensive |
+| **PEFT (LoRA, Adapters)**        | Train small parts only         | Cheap     |
+| **Instruction Fine-tuning**      | Make model follow instructions | Medium    |
+| **Domain Fine-tuning**           | Train for specific field       | Medium    |
+| **Task Fine-tuning**             | Train for exact task           | Small     |
+| **Alignment Fine-tuning + RLHF** | Teach safe & helpful behavior  | Medium    |
+
+
+from langchain_openai import OpenAI
+
+llm = OpenAI(
+    model="gpt-4o-mini",
+    temperature=0.2
+)
+
+result = llm.invoke("Write a short poem about space.")
+print(result)
+
+Where is used LLms:
+	summarization
+	text generation
+	extraction
+	basic tasks
+	
+=========================================================================================================
+Chat Models:
+Where is used Chat Models:
+	assistants
+	conversational flows
+	agents/tools
+	reasoning tasks
+	
+from langchain.chat_models import ChatOpenAI
+from langchain.schema import HumanMessage, SystemMessage
+
+chat = ChatOpenAI(model="gpt-4o-mini")
+
+messages = [
+    SystemMessage(content="You are a helpful assistant."),
+    HumanMessage(content="Explain quantum computing simply.")
+]
+
+response = chat(messages)
+print(response.content)
+
+Chat Model List
+
+https://docs.langchain.com/oss/python/integrations/chat
+
+
+
+=========================================================================================================
+Embedding Models:
+
+Top Embedding Model
+
+https://docs.langchain.com/oss/python/integrations/text_embedding#all-embedding-models
+
+
+
+Output parsers : 
+	stringoutput parsers
+	jsonoutout parsers
+	
+Similarity metrics
+	Cosine similarity
+	Euclidean distance
+	Dot product 
+
+
+
+
+
+
+-----------------------------
+Prompts
+-----------------------------
+PromptTemplate
+Messages
+
+static prompts
+dynamic prompts
+strimlit
