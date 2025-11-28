@@ -1,24 +1,8 @@
 NLU : Nature Language understand
-Lang chain language model
-different between agent and chatbot
-LLM Based model -> GPT-3 Llama-3 
-Chat model -> GPT-4, GPT-3.5, Llama-2-Chat
-why use LLMs and chat Models
-we should use llms model or chat model
-
-GPT models
-
-Embedding models
-GPT Embedding
-how to generate Embedding query
-how to generate Embedding query for multiple question?
-Fine-tuning for a specific task
-
 ------------------------------
 learn hugging face
 learn sklearn
 ------------------------------
-
 
 opensource model
 
@@ -41,14 +25,23 @@ LangChain Mastery
 │
 ├── 2. Prompts
 │       ├── Prompt Templates
-│       │       ├── StringPromptTemplate
+│       │       ├── PromptTemplate
 │       │       ├── ChatPromptTemplate
+│       │       ├── StringPromptTemplate
+│       │       ├── MessagesPlaceholder
+│       │       ├── FewShotPromptTemplate
+│       │       ├── FewShotChatMessagePromptTemplate
 │       │       ├── Few-shot Prompts
+│       │       ├── ChatMessagePromptTemplate
 │       │       └── System / Human / AI Messages
 │       └── Output Parsers
+│               ├── StrOutputParser
 │               ├── JSON Output Parser
 │               ├── Pydantic Output Parser
 │               ├── Structured Output Parser
+│               ├── CommaSeparatedListOutputParser
+│               ├── OutputFixingParser
+│               ├── RetryOutputParser
 │               └── Regex Parsers
 │
 ├── 3. Data Ingestion
@@ -332,10 +325,11 @@ Top Embedding Model
 https://docs.langchain.com/oss/python/integrations/text_embedding#all-embedding-models
 
 
-
+=========================
 Output parsers : 
 	stringoutput parsers
 	jsonoutout parsers
+	model.with_structured_output()
 	
 Similarity metrics
 	Cosine similarity
